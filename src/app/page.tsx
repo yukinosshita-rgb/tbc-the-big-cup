@@ -7,6 +7,7 @@ import Reviews from "@/components/Reviews";
 import Events from "@/components/Events";
 import Franchise from "@/components/Franchise";
 import Footer from "@/components/Footer";
+import TimeBomb from "@/components/TimeBomb";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Reviews />
       <Franchise />
       <Footer />
+      <TimeBomb />
     </>
   );
 }
