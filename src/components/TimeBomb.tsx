@@ -62,12 +62,12 @@ export default function TimeBomb() {
                 <h3 className="font-serif text-3xl font-bold text-white mb-3">
                   Interested?
                 </h3>
-                <p className="text-white/50 leading-relaxed mb-8 max-w-sm mx-auto">
-                  This is what a website can do for your business — customers
-                  find you on Google Maps, browse your menu instantly, and book
-                  events without a single phone call. More visibility, more
-                  sales, 24/7. Let&apos;s make it yours.
-                </p>
+                <ul className="text-white/50 text-sm leading-relaxed mb-8 max-w-sm mx-auto space-y-2 text-left">
+                  <li className="flex gap-2"><span className="text-brand-gold">&#10003;</span> Help customers find you on Google &amp; Maps</li>
+                  <li className="flex gap-2"><span className="text-brand-gold">&#10003;</span> Automate event bookings &amp; inquiries 24/7</li>
+                  <li className="flex gap-2"><span className="text-brand-gold">&#10003;</span> Build trust &amp; look professional to corporate clients</li>
+                  <li className="flex gap-2"><span className="text-brand-gold">&#10003;</span> Turn your Facebook page into a full online presence</li>
+                </ul>
 
                 <div className="space-y-3">
                   <a
