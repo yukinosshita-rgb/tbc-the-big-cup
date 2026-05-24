@@ -8,9 +8,16 @@ export default function TimeBomb() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setVisible(true), 25000);
+    const show = () => setVisible(true);
+    const timer = setTimeout(show, 25000);
     return () => clearTimeout(timer);
   }, []);
+
+  useEffect(() => {
+    if (visible) return;
+    const interval = setTimeout(() => setVisible(true), 25000);
+    return () => clearTimeout(interval);
+  }, [visible]);
 
   return (
     <AnimatePresence>
@@ -56,9 +63,10 @@ export default function TimeBomb() {
                   Interested?
                 </h3>
                 <p className="text-white/50 leading-relaxed mb-8 max-w-sm mx-auto">
-                  Let&apos;s talk over coffee. Whether it&apos;s a franchise
-                  opportunity, an event, or just a conversation — I&apos;d love
-                  to hear from you.
+                  This is what a website can do for your business — customers
+                  find you on Google Maps, browse your menu instantly, and book
+                  events without a single phone call. More visibility, more
+                  sales, 24/7. Let&apos;s make it yours.
                 </p>
 
                 <div className="space-y-3">
@@ -82,7 +90,7 @@ export default function TimeBomb() {
                 </div>
 
                 <p className="text-white/25 text-xs mt-6">
-                  Book a meeting — let&apos;s brew something great together.
+                  Book a meeting — your competitors already have a website.
                 </p>
               </div>
             </div>
