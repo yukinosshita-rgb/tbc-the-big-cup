@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.facebook.com)",
+      "WebSearch",
+      "WebFetch(domain:restaurantguru.com)",
+      "PowerShell(npm *)",
+      "PowerShell(Get-ChildItem *)",
+      "PowerShell(winget install *)",
+      "PowerShell($env:Path = [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"User\"\\); npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --no-import-alias --use-npm 2>&1 | Out-String)",
+      "PowerShell($env:Path = [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"User\"\\); npx create-next-app@latest tbc-website --typescript --tailwind --eslint --app --src-dir --no-import-alias --use-npm 2>&1 | Out-String)",
+      "PowerShell(Move-Item *)",
+      "PowerShell(npm install *)",
+      "PowerShell(npm run *)",
+      "PowerShell(Get-Process *)",
+      "PowerShell(try { $response = Invoke-WebRequest -Uri \"http://localhost:3000\" -UseBasicParsing -TimeoutSec 10; \"Status: $\\($response.StatusCode\\), Content length: $\\($response.Content.Length\\)\" } catch { $_.Exception.Message })",
+      "PowerShell(gh *)",
+      "PowerShell(gh auth *)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:3000\" -UseBasicParsing -TimeoutSec 5; \"Dev server OK - Status: $\\($r.StatusCode\\)\" } catch { \"Dev server not running\" })",
+      "PowerShell(git *)"
+    ]
+  }
+}
